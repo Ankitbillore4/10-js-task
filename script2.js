@@ -7,21 +7,43 @@
  var nameError= document.querySelector(".nameError")
  var EmailError= document.querySelector(".EmailError")
  var PasswordError= document.querySelector(".PasswordError")
- var from= document.querySelector(".from")
+ var form= document.querySelector(".form")
 
-nameError.innerHTML= '';
- Submit.addEventListener("click",function(){
-    if(isName==="" || isName===""){
-    nameError.innerHTML+=`Name can't be blank`
-    EmailError.innerHTML+=`Email can't be blank`
-    PasswordError.innerHTML+=`Password Atleast 6 Character`
-    }else{
-        nameError.innerHTML="sai he bhai"
-    }
-        
-     
- })
 
+
+ function formValidation(){
+    form.addEventListener("submit",function(e){
+
+        var emailCheck= /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/
+       
+        if(isName.value==="" || isName.value==null){
+    
+            e.preventDefault();
+            nameError.innerHTML="Name Can't be blank "
+        }else{
+            nameError.innerHTML=""
+        }
+        if(!Email.value.match(emailCheck)){
+        e.preventDefault();
+            EmailError.innerHTML="Valid Email is Required "
+        }else{
+            EmailError.innerHTML=" "
+    
+        }
+    
+        if(Password.value.length <=5){
+            e.preventDefault();
+                PasswordError.innerHTML="Password must be more than 6 characters "
+            }else{
+                PasswordError.innerHTML=""
+                
+            }
+         
+    
+     })    
+ }
+
+ formValidation()
 
  
 

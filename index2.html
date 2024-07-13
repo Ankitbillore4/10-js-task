@@ -4,31 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task 2</title>
+    <link rel="shortcut icon" href="https://download.logo.wine/logo/Microsoft_Forms/Microsoft_Forms-Logo.wine.png" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style2.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
-</head>
+</head> 
 <body>
     <div class="main h-screen w-full bg-[#08CBAA] flex  justify-center ">
         <h1 class="text-4xl  h-[10%] ml-24 mt-5">Form Validation :- Task( 2. )</h1>
         <div class="box h-[70%] w-[30%] bg-[#192033] text-white rounded-lg mt-[8%] ml-[-28%]">
-            <h1 class="text-3xl font-semibold text-center pt-4">Form Bharo..👇</h1>
-            <div class="form h-[70%] mt-10 ml-12 w-[80%]  flex flex-col items-center justify-center">
-                <label for="name" class="text-2xl">
-                    Name : <br><input class="Name text-xl pl-2  text-black" type="text" placeholder="Enter Your Name">
-                </label><br>
-               <h1 class="nameError mt-[-20px] text-xl text-red-600 ml-[-60px]"></h1><br>
-                <label for="email" class="text-2xl">
-                    Email: <br> <input class="Email text-xl pl-2 text-black" type="email" placeholder="Enter Your Email">
-                </label><br>
-               <h1 class="EmailError mt-[-20px] text-xl text-red-600 ml-[-60px]"></h1><br>
-                <label for="Password" class="text-2xl">
-                   Password : <br> <input class="Password text-xl pl-2  text-black" type="password" placeholder="Enter Password">
-                </label><br>
-                <h1 class="PasswordError mt-[-20px] text-xl text-red-600 ml-[-25px]"></h1><br>
-                <div class="flex items-center justify-center pt-5"><button class="Submit text-2xl   px-4 rounded-md py-1 bg-[#08CBAA]">Submit</button></div>
-                
-            </div>
+            <h1 class="text-3xl font-semibold text-center pt-4">Chalo Form Bharo..👇</h1>
+            <form class="form">
+                <div class="h-[70%] mt-10 ml-12 w-[80%]  flex flex-col items-center justify-center">
+                    <label for="name" class="text-2xl">
+                        Name : <br><input class="Name text-xl pl-2 outline-none text-black" type="text" placeholder="Enter Your Name">
+                    </label><br>
+                   <h1 class="nameError mt-[-20px] text-xl text-red-600 ml-[-70px]"></h1><br>
+                    <label for="email" class="text-2xl">
+                        Email: <br> <input class="Email text-xl pl-2 outline-none text-black" type="email" placeholder="Enter Your Email">
+                    </label><br>
+                   <h1 class="EmailError mt-[-20px] text-xl text-red-600 ml-[-40px]"></h1><br>
+                    <label for="Password" class="text-2xl">
+                       Password : <br> <input class="Password text-xl pl-2 outline-none text-black" type="password" placeholder="Enter Password">
+                    </label><br>
+                    <h1 class="PasswordError mt-[-20px] text-xl text-red-600"></h1><br>
+                    <div class="flex items-center justify-center pt-2"><button type="submit" class="text-2xl   px-4 rounded-md py-1 bg-[#08CBAA]">Submit</button></div>
+                    
+                </div>
+            </form>
         </div>
     </div>
     
