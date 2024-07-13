@@ -1,0 +1,27 @@
+*{
+  margin:0%;
+  padding:0%;
+  box-sizing: border-box;
+}
+
+html,body{
+height:100%;
+width:100%;
+}
+
+.text li{
+    position: relative;
+    background-color: rgb(5, 31, 31);
+    color: white;
+    font-size: 22px;
+    text-align: left;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.text li i{
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
