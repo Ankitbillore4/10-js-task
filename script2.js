@@ -9,8 +9,6 @@
  var PasswordError= document.querySelector(".PasswordError")
  var form= document.querySelector(".form")
 
-
-
  function formValidation(){
     form.addEventListener("submit",function(e){
 
@@ -38,7 +36,6 @@
                 PasswordError.innerHTML=""
                 
             }
-         
     
      })    
  }
