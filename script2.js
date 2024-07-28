@@ -36,10 +36,8 @@
                 PasswordError.innerHTML=""
                 
             }
-    
      })    
  }
-
  formValidation()
 
  
