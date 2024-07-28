@@ -1,4 +1,3 @@
-
 var isName = document.querySelector(".Name")
 var Email = document.querySelector(".Email")
 var Password = document.querySelector(".Password")
