@@ -2,24 +2,24 @@
 let downarrow = document.querySelector(".downarrow")
 let paragraf1 = document.querySelector(".paragraf1")
 
-var run= function(){
+var run = function () {
 
-    var  flag  = 0
-    downarrow.addEventListener("click",function(){
-        if(flag===0){
+    var flag = 0
+    downarrow.addEventListener("click", function () {
+        if (flag === 0) {
             console.log("heloo");
-            paragraf1.style.opacity= 1
-            downarrow.classList=`<i class="downarrow ri-arrow-up-s-line text-4xl >`
+            paragraf1.style.opacity = 1
+            downarrow.classList = `<i class="downarrow ri-arrow-up-s-line text-4xl >`
             flag = 1
-        }else{
+        } else {
             console.log("heyy");
-            paragraf1.style.opacity=0
-            downarrow.classList=`<i class="downarrow ri-arrow-down-s-line text-4xl >`
-            flag=0;
+            paragraf1.style.opacity = 0
+            downarrow.classList = `<i class="downarrow ri-arrow-down-s-line text-4xl >`
+            flag = 0;
         }
-       
+
     })
-      
+
 }
 
 run()
