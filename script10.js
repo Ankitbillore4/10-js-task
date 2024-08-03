@@ -53,7 +53,8 @@ function loadQuiz() {
         <div class="mb-2">
             <input type="radio" name="answer" id="d" value="d">
             <label for="d">${currentQuizData.d}</label>
-        </div>`;
+        </div>
+ `;
 }
 
 function getSelected() {
